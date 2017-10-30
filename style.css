@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Kavoon');
+* {
+  box-sizing: border-box;
+  /*margin: 0;*/
+}
+
+body {
+  font-family: sans-serif;
+  background: #14213c;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Kavoon', sans-serif;
+  color: #f46c8c;
+  font-size: 58px;
+}
+
+.game {
+  margin: 0 auto;
+  width: 87vw;
+  text-align: center;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0px 6px #44a6f3;
+  background: #1e5799;
+  background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 67%);
+  background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 67%);
+  background: linear-gradient(to bottom, #1e5799 0%, #2989d8 67%);
+}
+
+.word {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 0 auto;
+  width: 79%;
+}
+
+.ltrbox {
+  height: 50px;
+  border-bottom: #de9629 solid 8px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 1px #de2929;
+  background: #fceabb;
+  background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+  background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+  background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+  transition: all 1s ease;
+}
+
+.ltr {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Kavoon', sans-serif;
+  color: #d42774;
+  text-shadow: 0px 2px #ffe430;
+  transition: all 1s ease;
+}
+
+i {
+  padding: 0px 10px;
+}
+
+label {
+  font-size: 19px;
+  width: 68px;
+  line-height: 19px;
+  word-wrap: break-word;
+  display: inline-block;
+  color: #fff;
+  font-family: "Kavoon", sans-serif;
+  float: left;
+  padding-top: 7px;
+}
+
+.hint {
+  font-family: "Kavoon";
+  font-size: 29px;
+  font-style: italic;
+  color: #7db9e8;
+  text-shadow: 1px 1px #003675;
+}
+
+.message, .hint {
+  padding: 10px;
+  display: block;
+  width: 71%;
+  margin: 0 auto;
+}
+
+.message {
+  color: #f56eaa;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.sofar {
+  margin-top: 30px;
+  padding: 10px;
+  color: #fddb87;
+  font-family: "Kavoon", sans-serif;
+}
+
+.guessedltrs {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.formWrap {
+  background: #7db9e8;
+  background: -moz-linear-gradient(top, #7db9e8 0%, #2989d8 50%, #1e5799 100%);
+  background: -webkit-linear-gradient(top, #7db9e8 0%, #2989d8 50%, #1e5799 100%);
+  background: linear-gradient(to bottom, #7db9e8 0%, #2989d8 50%, #1e5799 100%);
+  box-shadow: 0px 6px #0c4990;
+}
+
+form, .formWrap {
+  width: 71%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.youwin {
+  font-size: 55px;
+  padding-bottom: 20px;
+  font-family: "Kavoon", sans-serif;
+  color: #fbdf93;
+  text-shadow: 0px 2px #99d2ff;
+}
+
+form input {
+  height: 51px;
+  width: 60px;
+  font-size: 24px;
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+  font-family: "Kavoon", sans-serif;
+  color: #d42774;
+}
+
+#gameForm button, .formWrap button, .newgamebtn {
+  padding: 10px 20px 11px !important;
+  font-size: 21px !important;
+  background-color: #F36C8C;
+  font-weight: bold;
+  text-shadow: 0px 3px #d42774;
+  color: #fff;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 90px;
+  border: 1px solid #F36C8C;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font-family: "Kavoon", sans-serif;
+  margin-left: 15px;
+}
+
+#gameForm button:hover {
+  background: #e63f89;
+}
+
+#guessForm {
+  text-transform: uppercase;
+}
+
+.hidden {
+  visibility: hidden;
+}
